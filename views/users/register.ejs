@@ -1,0 +1,59 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container-left">
+  <div class="content-wrapper">
+    <h2 class="section-header">Sign in</h2>
+    <div class="shadow-sm mt-4">
+      <div class="card-body">
+        <form
+          action="/register"
+          method="POST"
+          class="validated-form"
+          novalidate
+        >
+          <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input
+              class="form-control"
+              type="text"
+              id="username"
+              name="username"
+              required
+              autofocus
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="form-control"
+              type="password"
+              id="password"
+              name="password"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <button class="btn btn-block" id="accent-button-card">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <%- include('../partials/flash')%>
+</div>
+<div class="container-right">
+  <div class="image-handler">
+    <img src="/login-bk-new.jpeg" id="container-image" alt="" />
+  </div>
+</div>

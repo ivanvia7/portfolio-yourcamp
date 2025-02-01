@@ -1,0 +1,45 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container-left">
+  <div class="content-wrapper">
+    <h2 class="section-header">Welcome back</h2>
+    <div class="shadow-sm mt-4">
+      <div class="card-body">
+        <form action="/login" method="POST" class="validated-form" novalidate>
+          <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input
+              class="form-control"
+              type="text"
+              id="username"
+              console.log(``);
+              name="username"
+              autofocus
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="form-control"
+              type="password"
+              id="password"
+              name="password"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <button class="btn btn-block" id="accent-button-card">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <%- include('../partials/flash')%>
+</div>
+<div class="container-right">
+  <div class="image-handler">
+    <img src="/login-bk-new.jpeg" id="container-image" alt="" />
+  </div>
+</div>
