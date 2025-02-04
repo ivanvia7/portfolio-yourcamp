@@ -84,7 +84,7 @@ This web application allows users to **explore, review, and manage campgrounds**
 
 ### 🔹 Home Page
 
-![Home Page](static/cp-home.png)
+![Home Page](static/cp-home.jpg)
 
 ### 🔹 Campground Details
 
