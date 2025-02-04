@@ -67,15 +67,6 @@ This web application allows users to **explore, review, and manage campgrounds**
  ├── schemas.js          # Validation schemas
 ```
 
-## 🛠️ Setup & Installation
-
-```
-git clone https://github.com/yourusername/campground-review-app.git
-cd campground-review-app
-npm install
-npm run start
-```
-
 ### Load the Application:
 
 1. Start MongoDB (`mongod` or use Atlas for cloud storage).
